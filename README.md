@@ -7,4 +7,6 @@
 3.selenium_urltitle_xls.py
 为学习使用selenium实现的批量抓取url对应的title内容，此方法仅适用于可正常访问且证书有效的url，如：https://www.baidu.com/
 
-4.以上内容均为新手学习所写，大神及喷子请绕道，谢谢！
+4.phantomjs.exe为无头浏览器，下载后放入Python的Scripts目录下，并添加到系统环境变量
+
+5.以上内容均为新手itcker学习所写，大神及喷子请绕道，谢谢！
