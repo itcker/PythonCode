@@ -11,7 +11,17 @@ url_xls = []   #创建空列表
 title_xls = []
 
 for urls in file:
-	browser = webdriver.PhantomJS()
+	#options = webdriver.ChromeOptions()
+	#options.add_argument('--ignore-certificate-errors')
+	#browser = webdriver.Chrome(chrome_options = options)
+	cap = webdriver.DesiredCapabilities.PHANTOMJS
+	cap["phantomjs.page.settings.resourceTimeout"] = 200000
+	cap["phantomjs.page.settings.loadImages"] = True
+	cap["phantomjs.page.settings.disk-cache"] = True
+	cap["phantomjs.page.settings.userAgent"] = "Chrome/63.0.3239.108"
+	cap["phantomjs.page.customHeaders.User-Agent"] = "Chrome/63.0.3239.108"
+	cap["phantomjs.page.customHeaders.Referer"] = urls
+	browser = webdriver.PhantomJS(desired_capabilities=cap, service_args=['--ignore-ssl-errors=true'])
 	browser.get(urls)
 	#time.sleep(2)
 
