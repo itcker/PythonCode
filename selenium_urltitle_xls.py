@@ -21,7 +21,7 @@ for urls in file:
 	cap["phantomjs.page.settings.userAgent"] = "Chrome/63.0.3239.108"
 	cap["phantomjs.page.customHeaders.User-Agent"] = "Chrome/63.0.3239.108"
 	cap["phantomjs.page.customHeaders.Referer"] = urls
-	browser = webdriver.PhantomJS(desired_capabilities=cap, service_args=['--ignore-ssl-errors=true'])
+	browser = webdriver.PhantomJS(desired_capabilities=cap, service_args=['--ignore-ssl-errors=true'])   #Phantomjs中service_args参数可以忽略https错误
 	browser.get(urls)
 	#time.sleep(2)
 
