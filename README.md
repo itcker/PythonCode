@@ -5,7 +5,7 @@
 ，不能为https://x.x.x.x:8080，
 
 3.geturltitle.py
-与BeautifulSoup_urltitle_xls.py类似，实现的批量抓取url对应的title内容以及status_code（状态码），但相比BeautifulSoup_urltitle_xls.py使用范围更广，除无法获取非JS生成的url和网页内容外，其他类型的基本可以，因代码中加入了http/https,因此只需提供简单的url即可。如：www.baidu.com或x.x.x.x:443
+与BeautifulSoup_urltitle_xls.py类似，实现的批量抓取url对应的title内容以及status_code（状态码），但相比BeautifulSoup_urltitle_xls.py使用范围略广，除无法获取非JS生成的url和网页内容外，其他类型的基本可以，因代码中加入了http/https,因此只需提供简单的url即可。如：www.baidu.com或x.x.x.x:443
 
 4.selenium_urltitle_xls.py
 使用selenium+PhantomJS实现的批量抓取url对应的title内容，同时将结果写入excel表中，此方法仅适用于可正常访问的url，如：https://www.baidu.com/
