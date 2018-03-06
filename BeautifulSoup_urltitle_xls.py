@@ -18,7 +18,7 @@ for urls in file:
 	url_xls.append(urls)   #添加元素到列表中
 	title_xls.append(titles)
 	
-	#print (urls,title)
+	#print (urls,titles)
 
 workbook = xlwt.Workbook(encoding='utf-8')   #创建工作簿
 sheet = workbook.add_sheet('Sheet1',cell_overwrite_ok=True)   #创建sheet
