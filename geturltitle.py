@@ -15,7 +15,7 @@ for url in urls:
 	#print (address)
 
 	try:
-		r = requests.get(address,verify=False)
+		r = requests.get(address, verify = False)
 		soup = BeautifulSoup(r.content,"lxml")
 		#titles = soup.title.text
 		print (r.url,soup.title.text,r.status_code)
