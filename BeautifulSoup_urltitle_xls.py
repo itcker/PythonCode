@@ -5,7 +5,7 @@ import urllib.request   #import导入模块
 import xlwt
 from bs4 import BeautifulSoup
 
-file = open("url.txt" , "r")   #打开url.txt "r"为阅读模式下
+file = open("url.txt","r")   #打开url.txt "r"为阅读模式下
 
 url_xls = []   #创建空列表
 title_xls = []
@@ -17,8 +17,10 @@ for urls in file:
 
 	url_xls.append(urls)   #添加元素到列表中
 	title_xls.append(titles)
+	
+	#print (urls,title)
 
-workbook = xlwt.Workbook(encoding = 'utf-8')   #创建工作簿
+workbook = xlwt.Workbook(encoding='utf-8')   #创建工作簿
 sheet = workbook.add_sheet('Sheet1',cell_overwrite_ok=True)   #创建sheet
 
 head = ['url', 'title']   # 表头部信息
