@@ -1,4 +1,5 @@
 # coding:utf-8
+#author:itcker
 
 import requests
 from bs4 import BeautifulSoup
