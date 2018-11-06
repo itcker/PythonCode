@@ -11,6 +11,9 @@
 使用selenium+PhantomJS实现的批量抓取url对应的title内容，同时将结果写入excel表中，此方法仅适用于可正常访问的url，如：https://www.baidu.com/
 无法抓取访问超时的url。另外，此方法虽为批量，但应需要调用PhantomJS，所以耗费资源，效率低，仅供参考学习，不建议批量使用。
 
+5.getiptitle.py
+实现批量ip地址指定相应的端口实现web的title内容抓取。
+
 6.phantomjs.exe为无头浏览器，下载后放入Python的Scripts目录下，并添加到系统环境变量
 
 7.以上内容均为学习所写，仅供共同学习使用，大神及喷子请绕道，谢谢！
