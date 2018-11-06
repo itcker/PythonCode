@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 requests.packages.urllib3.disable_warnings()
 
-#url = "http://183.224.16.233:8089/bsys/newPortal/login.html"
+#url = "http://xxx.xxx.xxx.xxx:8089/xxx/xxx/login.html"
 urls = open("urls.txt","r")
 
 for url in urls:
