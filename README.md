@@ -14,6 +14,6 @@
 5.getiptitle.py
 实现批量ip地址指定相应的端口实现web的title内容抓取。
 
-6.phantomjs.exe为无头浏览器，下载后放入Python的Scripts目录下，并添加到系统环境变量
+6.phantomjs.exe为浏览器，下载后放入Python的Scripts目录下，并添加到系统环境变量
 
 7.以上内容均为学习所写，仅供娱乐！
