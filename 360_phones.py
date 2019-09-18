@@ -35,7 +35,7 @@ def phones_360_take_screenshot(phones):
 				#print(pic_path)
 				time.sleep(0.2)	
 				browser.save_screenshot(pic_path)
-				
+			
 				print(phone.strip('\n'),i.text.replace('\n','').replace('\t',''))
 
 	browser.quit()			
