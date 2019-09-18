@@ -1,7 +1,7 @@
 1.使用过程中需要安装所需要的第三方库，配置相应的运行环境等
 
 2.BeautifulSoup_urltitle_xls.py
-使用BeautifulSoup实现的批量抓取url对应的title内容，同时将结果写入excel表中，此方法中的url必须同时满足以下条件：可正常访问、无指定端口、非JS生成的url和网页内容、无重定向、证书正确。需要为标准的url地址，如：https://www.baidu.com/
+使用BeautifulSoup实现的批量抓取url对应的title内容，同时将结果写入excel表中，此方法中的url必须同时满足以下条件：可正常访问/无指定端口/非JS生成的url和网页内容/无重定向/证书正确。需要为标准的url地址，如：https://www.baidu.com/
 ，不能为https://x.x.x.x:8080，
 
 3.geturltitle.py
